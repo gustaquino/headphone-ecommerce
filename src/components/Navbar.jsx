@@ -12,8 +12,8 @@ export const Navbar = () => {
           to={'/'}
           className=" mr-5 no-underline flex text-center border-2 border-[#ebe5f9d9] bg-[#ebe5f9d9] rounded-xl w-full justify-between text-black gap-2 px-2"
         >
-          <p className="text-black items-center text-xl justify-center content-center flex">Store</p>
-          <Storefront size={35} weight="thin" />
+          <p className="items-center text-black/75 justify-center content-center flex">Store</p>
+          <Storefront size={35} weight="thin" className="text-[#4C2895]" />
         </Link>
         <Link to={'/cart'}>
           {' '}
@@ -23,7 +23,6 @@ export const Navbar = () => {
           />{' '}
         </Link>
       </div>
-      ;
     </div>
   );
 };
