@@ -3,12 +3,12 @@ import './App.css';
 import { Navbar } from './components/Navbar';
 import { Shop } from './pages/shop/Shop';
 import { Cart } from './pages/cart/Cart';
-import { ShopcontextProv } from './context/shop-context';
+import { ShopContextProvider } from './context/shop-context';
 
 function App() {
   return (
     <div className="App">
-      <ShopcontextProv>
+      <ShopContextProvider>
         <Router>
           <Navbar />
           <Routes>
@@ -16,7 +16,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
           </Routes>
         </Router>
-      </ShopcontextProv>
+      </ShopContextProvider>
     </div>
   );
 }
