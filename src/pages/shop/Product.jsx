@@ -8,16 +8,16 @@ export const Product = (props) => {
   const cartItemCount = cartItems[id];
 
   return (
-    <div className="product rounded-xl w-[300px] h-[350px] m-[100px] flex flex-col justify-center items-center">
-      <img src={productImage} className="w-[400px] h-auto " />
-      <div className="description text-center">
+    <div className="product rounded-xl w-[300px] bg-white relative   h-full m-[100px] flex flex-col justify-center items-center border-2 border-white px-2 py-2  shadow-xl ">
+      <img src={productImage} className="w-[400px] h-auto bg-white" />
+      <div className="description text-center bg-white">
         <p>
           <b>{productName}</b>
         </p>
         <p> ${price}</p>
       </div>
       <button
-        className="addToCartBtn border-2 mt-1 border-white text-white bg-[#4C2895] rounded-2xl py-2 px-4 hover:bg-[#5d3d9f] hover:scale-110"
+        className="addToCartBtn border-2 mt-1 border-white text-white bg-orange-400 rounded-2xl py-2 px-4 hover:bg-orange-300 hover:scale-110"
         onClick={() => addToCart(id)}
       >
         Add to Cart{cartItemCount > 0 && <> ({cartItemCount})</>}
