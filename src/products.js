@@ -1,9 +1,9 @@
-import applemax from './assets/applemax.jpg';
-import shd80 from './assets/shd80.jpg';
-import philco from './assets/philco.jpg';
-import hd200 from './assets/hd200.jpg';
-import montblanc from './assets/montblanc.jpg';
-import w800 from './assets/w800.jpg';
+import applemax from './assets/applemax.png';
+import shd80 from './assets/shd80.png';
+import philco from './assets/philco.png';
+import hd200 from './assets/hd200.png';
+import montblanc from './assets/montblanc.png';
+import w800 from './assets/w800.png';
 export const PRODUCTS = [
   {
     id: 1,
