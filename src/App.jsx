@@ -7,7 +7,7 @@ import { ShopContextProvider } from './context/shop-context';
 
 function App() {
   return (
-    <div className="App bg-black/90">
+    <div className="App bg-[#fff0db]">
       <ShopContextProvider>
         <Router>
           <Navbar />
